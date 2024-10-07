@@ -16,7 +16,7 @@
 
 LOCAL_PATH := device/samsung/zerofltexx
 
-ifneq ($(filter zeroflte zerofltexx zeroflteskt,$(TARGET_DEVICE)),)
+ifneq ($(filter zeroflte zerofltexx zeroflteskt zerofltecan zerofltetmo,$(TARGET_DEVICE)),)
 
   subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
   $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))

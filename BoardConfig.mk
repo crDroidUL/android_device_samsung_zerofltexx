@@ -26,7 +26,7 @@ include device/samsung/universal7420-common/BoardConfigCommon.mk
 DEVICE_PATH := device/samsung/zerofltexx
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := zeroflte,zerofltexx,zeroflteskt
+TARGET_OTA_ASSERT_DEVICE := zeroflte,zerofltexx,zeroflteskt,zerofltecan,zerofltetmo
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth

@@ -33,6 +33,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	vendor.lineage.livedisplay@2.1-service.zero
 
+# Play Integrity
+-include vendor/lineage-priv/keys/keys.mk
+
+# Quick Tap
+PRODUCT_COPY_FILES += \
+    device/samsung/zerofltexx/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.columbus.use_ap_sensor=false
+
 # Thermal config
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json

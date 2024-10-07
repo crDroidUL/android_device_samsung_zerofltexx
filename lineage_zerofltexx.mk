@@ -36,6 +36,14 @@ PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
+# crDroid build flags
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_SUPPORTS_BLUR := true
+TARGET_DISABLE_EPPE := true
+
+
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRODUCT_NAME=zerofltexx \
